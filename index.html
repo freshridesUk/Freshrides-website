@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FreshRides Auto Detailing — cleaner, shinier, fresher. Mobile and on-site car detailing.">
+  <title>FreshRides | Auto Detailing</title>
+  <style>
+    :root{
+      --blue:#00aaff; --blue2:#0077ff; --dark:#05070a; --card:#0d1117;
+      --text:#f5f7fa; --muted:#aeb8c4; --line:rgba(0,170,255,.25);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;background:var(--dark);color:var(--text);line-height:1.5}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1100px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(5,7,10,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .logo{font-size:1.55rem;font-weight:900;font-style:italic;letter-spacing:-1px}
+    .logo span{color:var(--blue)}
+    .navlinks{display:flex;gap:24px;font-weight:700;font-size:.95rem}
+    .navlinks a:hover{color:var(--blue)}
+    .menu{display:none;background:none;border:0;color:white;font-size:1.6rem}
+    .hero{min-height:650px;display:grid;place-items:center;text-align:center;padding:100px 0 80px;
+      background:radial-gradient(circle at 50% 30%,rgba(0,136,255,.22),transparent 38%),
+      linear-gradient(180deg,#07111d 0%,#05070a 70%)}
+    .badge{display:inline-block;border:1px solid var(--line);color:#8edcff;border-radius:999px;padding:8px 14px;font-weight:800;font-size:.82rem;margin-bottom:22px}
+    h1{font-size:clamp(3rem,9vw,6.5rem);line-height:.9;letter-spacing:-5px;font-style:italic}
+    h1 span{color:var(--blue)}
+    .hero p{max-width:650px;margin:25px auto;color:var(--muted);font-size:1.1rem}
+    .buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-block;padding:14px 22px;border-radius:10px;font-weight:900;border:1px solid var(--blue)}
+    .primary{background:linear-gradient(135deg,var(--blue),var(--blue2));color:#00111c;border:0}
+    .secondary{background:#0b1118}
+    section{padding:85px 0}
+    .section-title{text-align:center;margin-bottom:42px}
+    .section-title h2{font-size:2.3rem}
+    .section-title p{color:var(--muted);margin-top:8px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:linear-gradient(180deg,#111822,#0a0e13);border:1px solid var(--line);border-radius:18px;padding:25px}
+    .card h3{font-size:1.25rem;margin-bottom:8px}
+    .price{font-size:2rem;font-weight:900;color:var(--blue);margin:10px 0 14px}
+    .card ul{list-style:none;color:var(--muted);font-size:.95rem}
+    .card li{margin:7px 0}.card li::before{content:"✓ ";color:var(--blue);font-weight:900}
+    .features .card{text-align:center}.icon{font-size:2rem;margin-bottom:12px}
+    .about{background:#080c11;border-top:1px solid rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.05)}
+    .aboutbox{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+    .about h2{font-size:2.5rem;margin-bottom:15px}.about p{color:var(--muted);margin-bottom:14px}
+    .quote{border-left:3px solid var(--blue);padding-left:18px;color:#dce7f1;font-weight:700}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    .contact .card{height:100%}.contact strong{display:block;font-size:1.15rem;margin-bottom:6px}
+    footer{padding:35px 0;text-align:center;border-top:1px solid var(--line);color:var(--muted)}
+    footer b{color:white}
+    @media(max-width:760px){
+      .navlinks{display:none}.menu{display:block}
+      .grid,.aboutbox,.contact{grid-template-columns:1fr}
+      h1{letter-spacing:-3px}
+      section{padding:65px 0}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="logo" href="#home">FRESH<span>RIDES</span></a>
+      <div class="navlinks">
+        <a href="#services">Services</a><a href="#why">Why Us</a><a href="#contact">Contact</a>
+      </div>
+      <button class="menu" onclick="document.querySelector('.navlinks').style.display =
+        document.querySelector('.navlinks').style.display === 'flex' ? 'none' : 'flex'">☰</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="badge">MOBILE & ON-SITE AUTO DETAILING</div>
+      <h1>FRESH<span>RIDES</span></h1>
+      <p>Cleaner. Shinier. Fresher. Professional car detailing with attention to the details that make your ride stand out.</p>
+      <div class="buttons">
+        <a class="btn primary" href="#contact">BOOK YOUR FRESHRIDE</a>
+        <a class="btn secondary" href="#services">VIEW PRICES</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Services</h2>
+        <p>Simple packages for a fresh, clean finish.</p>
+      </div>
+      <div class="grid">
+        <article class="card"><h3>Exterior Wash & Shine</h3><div class="price">£8.99</div><ul><li>Thorough hand wash</li><li>Wheels cleaned & tyres dressed</li><li>Exterior finish & shine</li></ul></article>
+        <article class="card"><h3>Mini Valet</h3><div class="price">£16.99</div><ul><li>Interior vacuum</li><li>Dashboard & door cards cleaned</li><li>Windows cleaned</li><li>Exterior wash & shine</li></ul></article>
+        <article class="card"><h3>Deep Clean</h3><div class="price">£29.99</div><ul><li>Full interior clean</li><li>Seats, carpets & mats</li><li>Windows inside & out</li><li>Exterior wash & tyre dressing</li></ul></article>
+        <article class="card"><h3>Wax & Protection</h3><div class="price">£9.99</div><ul><li>Quality wax application</li><li>Enhanced gloss & water beading</li><li>Added paint protection</li></ul></article>
+        <article class="card"><h3>Premium Detail & Protection</h3><div class="price">£59.99</div><ul><li>Deep interior & exterior clean</li><li>Machine polish for light marks</li><li>Paint/sealant protection</li><li>Final detail & tyre dressing</li></ul></article>
+      </div>
+      <p style="text-align:center;color:#8793a0;margin-top:22px;font-size:.85rem">Prices may vary depending on vehicle size and condition.</p>
+    </div>
+  </section>
+
+  <section class="about" id="why">
+    <div class="container aboutbox">
+      <div>
+        <h2>Why FreshRides?</h2>
+        <p>We focus on the little things that make a big difference. Every vehicle gets careful attention, quality products and a finish we're proud to put our name on.</p>
+        <p class="quote">“Because your ride deserves to feel fresh.”</p>
+      </div>
+      <div class="grid features">
+        <div class="card"><div class="icon">🛡️</div><h3>Quality Products</h3><p>Products chosen for a clean, glossy finish.</p></div>
+        <div class="card"><div class="icon">✨</div><h3>Attention to Detail</h3><p>We don't rush the details that matter.</p></div>
+        <div class="card"><div class="icon">📍</div><h3>Mobile & On-Site</h3><p>Convenient detailing at your location.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Ready for a FreshRide?</h2>
+        <p>Get in touch to check availability and book.</p>
+      </div>
+      <div class="contact">
+        <a class="card" href="https://instagram.com/freshrides" target="_blank"><strong>📸 Instagram</strong><span>@freshrides — DM us to book</span></a>
+        <a class="card" href="https://wa.me/440000000000" target="_blank"><strong>💬 WhatsApp</strong><span>Replace this number with your WhatsApp link</span></a>
+        <div class="card"><strong>📍 Service Area</strong><span>Add your town/city here</span></div>
+        <div class="card"><strong>🕒 Availability</strong><span>Message us for current availability</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container"><b>FRESHRIDES AUTO DETAILING</b><br>Cleaner. Shinier. Fresher. © <span id="year"></span></div>
+</footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body>
+</html>
