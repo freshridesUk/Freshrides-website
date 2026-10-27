@@ -1,391 +1,484 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#080b12">
-  <meta name="description" content="FreshRides professional car detailing in Leeds. Exterior washes, mini valets, deep cleans and premium detailing. Message us to book.">
-  <title>FreshRides | Car Detailing in Leeds</title>
-  <style>
-    :root{--bg:#080b12;--panel:#101622;--panel2:#0d131e;--text:#f4f7fb;--muted:#a8b2c3;--blue:#36a7ff;--blue2:#1379dc;--line:rgba(255,255,255,.1);--radius:22px;--max:1120px}
-    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:radial-gradient(ellipse at 80% 0%,rgba(28,119,210,.18),transparent 38%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.wrap{width:min(var(--max),calc(100% - 36px));margin:auto}.topbar{position:sticky;top:0;z-index:20;background:rgba(8,11,18,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;font-size:1.12rem;font-weight:900;letter-spacing:.5px}.brand-mark{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--blue),#1762bf);color:white;font-weight:1000;box-shadow:0 7px 25px #1685df44}.brand span:last-child{color:var(--blue)}.navlinks{display:flex;align-items:center;gap:22px;color:#d0d8e5;font-size:.92rem}.navlinks a:hover{color:var(--blue)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:999px;padding:12px 18px;background:linear-gradient(135deg,var(--blue),var(--blue2));color:white;font-weight:800;box-shadow:0 8px 25px #1685df26;transition:transform .18s,filter .18s}.nav-cta:hover,.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.btn.secondary{background:#ffffff0b;border:1px solid var(--line);box-shadow:none}.hero{padding:84px 0 70px;position:relative;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:#b9e2ff;background:#1685df19;border:1px solid #1685df50;border-radius:999px;padding:7px 12px;font-size:.8rem;font-weight:800;letter-spacing:.7px;text-transform:uppercase}.eyebrow:before{content:"";width:7px;height:7px;border-radius:50%;background:#50bdff;box-shadow:0 0 12px #50bdff}.hero h1{font-size:clamp(2.7rem,6.4vw,5.4rem);line-height:.99;letter-spacing:-.065em;margin:22px 0}.hero h1 span{color:var(--blue)}.hero p{font-size:1.08rem;color:var(--muted);max-width:580px;margin:0 0 26px}.actions{display:flex;flex-wrap:wrap;gap:12px}.hero-card{position:relative;min-height:370px;border:1px solid #6bbdff36;border-radius:30px;background:linear-gradient(145deg,#18263a,#0d1420 65%);padding:25px;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 24px 90px #0007}.hero-card:before{content:"FR";position:absolute;right:-12px;top:-52px;font-size:17rem;font-weight:1000;letter-spacing:-.12em;color:#ffffff06;line-height:1}.hero-card-top,.hero-card-bottom{position:relative;z-index:1}.hero-card-top small{color:#a8d9ff;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}.hero-card-top h2{font-size:2.1rem;line-height:1.1;margin:9px 0 0;max-width:300px}.shine{position:relative;height:150px;margin:12px -10px;display:grid;place-items:center}.shine svg{width:100%;max-width:390px;filter:drop-shadow(0 18px 16px #0008)}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.stat{background:#ffffff08;border:1px solid var(--line);padding:12px;border-radius:15px}.stat strong{display:block;font-size:1rem}.stat span{font-size:.75rem;color:var(--muted)}section{padding:68px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:27px}.kicker{color:var(--blue);font-size:.78rem;letter-spacing:1.5px;text-transform:uppercase;font-weight:900}.section-head h2{font-size:clamp(1.9rem,4vw,3rem);line-height:1.1;letter-spacing:-.045em;margin:7px 0 0}.section-head p{color:var(--muted);max-width:480px;margin:0}.services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service{padding:23px;border-radius:var(--radius);border:1px solid var(--line);background:linear-gradient(145deg,#131b29,#0c111a);min-height:205px;display:flex;flex-direction:column}.service-icon{width:44px;height:44px;display:grid;place-items:center;border-radius:14px;background:#1685df1c;border:1px solid #1685df35;color:#8bd1ff;font-size:1.3rem}.service h3{margin:16px 0 4px;font-size:1.12rem}.service p{color:var(--muted);font-size:.91rem;margin:0 0 18px}.price{margin-top:auto;font-size:1.5rem;font-weight:900;letter-spacing:-.04em}.price small{font-size:.75rem;color:var(--muted);font-weight:500;letter-spacing:0}.work-section{background:linear-gradient(180deg,transparent,#0c121c 22%,#0c121c 80%,transparent)}.video-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.video-card{overflow:hidden;border:1px solid var(--line);background:#0b1019;border-radius:var(--radius);box-shadow:0 12px 38px #0003}.video-card.featured{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr}.video-frame{background:#05070b;position:relative;min-height:260px;display:flex;align-items:center;justify-content:center}.video-frame video{display:block;width:100%;height:100%;max-height:620px;object-fit:contain;background:#05070b}.video-card:not(.featured) .video-frame video{aspect-ratio:9/16;max-height:500px}.video-card:not(.featured) .video-frame{min-height:240px}.video-info{padding:20px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}.video-info .tag{font-size:.73rem;color:#9bd8ff;text-transform:uppercase;letter-spacing:1px;font-weight:900}.video-info h3{font-size:1.4rem;line-height:1.2;margin:8px 0}.video-info p{color:var(--muted);font-size:.92rem;margin:0 0 17px}.text-link{color:#8ed1ff;font-weight:800;font-size:.9rem}.text-link:hover{color:white}.giveaway{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center;border:1px solid #1685df55;background:radial-gradient(ellipse at 80% 30%,#1379dc26,transparent 50%),linear-gradient(135deg,#111b2a,#0c1119);border-radius:28px;padding:30px}.giveaway h2{font-size:clamp(2rem,4vw,3.4rem);line-height:1.04;letter-spacing:-.05em;margin:12px 0}.giveaway h2 span{color:var(--blue)}.giveaway p{color:var(--muted)}.giveaway video{width:100%;max-height:470px;aspect-ratio:9/16;object-fit:contain;background:#05070b;border-radius:18px}.steps{display:flex;flex-wrap:wrap;gap:9px;margin:20px 0}.step{border:1px solid var(--line);border-radius:999px;padding:8px 12px;font-size:.84rem;color:#dce7f5;background:#ffffff07}.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.why{padding:22px;border:1px solid var(--line);border-radius:19px;background:#ffffff04}.why strong{display:block;margin-bottom:6px}.why p{color:var(--muted);margin:0;font-size:.92rem}.booking{display:grid;grid-template-columns:.85fr 1.15fr;gap:26px;align-items:start}.booking-copy{padding:12px 0}.booking-copy h2{font-size:clamp(2rem,4vw,3.3rem);letter-spacing:-.05em;line-height:1.05;margin:10px 0 15px}.booking-copy p{color:var(--muted)}.contact-lines{display:grid;gap:12px;margin-top:24px}.contact-line{display:flex;gap:12px;align-items:center}.contact-line .bubble{width:40px;height:40px;border-radius:13px;background:#1685df19;border:1px solid #1685df35;display:grid;place-items:center}.contact-line small{display:block;color:var(--muted)}.form-card{padding:24px;border-radius:var(--radius);background:linear-gradient(145deg,#141d2c,#0c111a);border:1px solid var(--line)}.form-card h3{margin:0 0 5px;font-size:1.35rem}.form-card>p{margin:0 0 20px;color:var(--muted);font-size:.9rem}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:grid;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:.82rem;font-weight:750;color:#dbe5f3}.field input,.field select,.field textarea{width:100%;border-radius:12px;border:1px solid #ffffff1c;background:#080d15;color:white;padding:12px 13px;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--blue)}.field textarea{min-height:105px;resize:vertical}.field select option{background:#0d131e}.form-card .btn{width:100%;margin-top:17px;cursor:pointer}.fineprint{font-size:.75rem!important;color:#7f8b9d!important;margin:12px 0 0!important}.footer{padding:30px 0 35px;border-top:1px solid var(--line);color:var(--muted);font-size:.86rem}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}.socials{display:flex;gap:16px;flex-wrap:wrap}.socials a{color:#d7e7f8}.socials a:hover{color:var(--blue)}.mobile-book{display:none}
-    @media(max-width:850px){.navlinks{gap:12px}.navlinks a:not(.nav-cta){display:none}.hero-grid,.booking{grid-template-columns:1fr}.hero{padding-top:54px}.hero-card{min-height:310px}.services{grid-template-columns:repeat(2,1fr)}.video-card.featured{grid-template-columns:1fr}.video-card.featured .video-frame video{max-height:520px}.giveaway{grid-template-columns:1fr}.giveaway video{max-height:430px}.why-grid{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}.section-head p{max-width:none}}
-    @media(max-width:560px){.wrap{width:min(var(--max),calc(100% - 24px))}.nav{min-height:64px}.brand{font-size:1rem}.brand-mark{width:34px;height:34px}.nav-cta{padding:10px 13px;font-size:.84rem}.hero h1{font-size:clamp(2.65rem,13vw,4.1rem)}.hero{padding:48px 0 40px}.hero-card{padding:20px;min-height:285px}.hero-card-top h2{font-size:1.7rem}.stats{gap:6px}.stat{padding:10px 8px}.stat span{font-size:.68rem}.services,.video-grid{grid-template-columns:1fr}.video-card.featured{grid-column:auto}.video-frame,.video-card:not(.featured) .video-frame{min-height:190px}.video-card:not(.featured) .video-frame video{max-height:540px}.service{min-height:180px}.giveaway{padding:22px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}section{padding:50px 0}.mobile-book{display:inline-flex;position:fixed;bottom:14px;left:12px;right:12px;z-index:25;box-shadow:0 10px 30px #000a}.footer{padding-bottom:86px}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080b12">
+<meta name="description" content="FreshRides professional car detailing in Leeds. Message us to book.">
+<title>FreshRides | Car Detailing Leeds</title>
+
+<style>
+:root {
+  --bg:#080b12;
+  --panel:#111927;
+  --blue:#36a7ff;
+  --text:#f4f7fb;
+  --muted:#a8b2c3;
+  --line:#263244;
+}
+* {box-sizing:border-box}
+html {scroll-behavior:smooth;scroll-padding-top:80px}
+body {
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.6;
+}
+a {color:inherit;text-decoration:none}
+.wrap {width:min(1100px,92%);margin:auto}
+header {
+  position:sticky;top:0;z-index:10;
+  background:#080b12ee;
+  border-bottom:1px solid var(--line);
+}
+nav {
+  min-height:70px;display:flex;align-items:center;
+  justify-content:space-between;gap:15px;flex-wrap:wrap;
+}
+.logo {font-size:24px;font-weight:900;color:var(--blue)}
+.navlinks {display:flex;gap:17px;align-items:center;flex-wrap:wrap;font-size:14px}
+.btn {
+  display:inline-block;background:var(--blue);color:#06101b;
+  padding:12px 18px;border-radius:30px;font-weight:800;
+}
+section {padding:65px 0}
+.hero {
+  padding:85px 0;
+  background:radial-gradient(ellipse at top right,#12345a,transparent 60%);
+}
+.hero-grid {
+  display:grid;grid-template-columns:1.2fr .8fr;
+  gap:30px;align-items:center;
+}
+.eyebrow {
+  color:var(--blue);font-weight:800;
+  text-transform:uppercase;letter-spacing:2px;font-size:13px;
+}
+h1 {font-size:clamp(42px,7vw,76px);line-height:1.02;margin:15px 0}
+h1 span,h2 span {color:var(--blue)}
+p {color:var(--muted)}
+.hero-card {
+  background:linear-gradient(145deg,#192b42,#0d1420);
+  border:1px solid #31506e;border-radius:25px;
+  padding:30px;min-height:300px;
+  display:flex;flex-direction:column;justify-content:center;
+}
+.hero-card h2 {font-size:36px;line-height:1.15}
+.stats {display:flex;gap:10px;margin-top:20px}
+.stat {
+  flex:1;padding:12px;border-radius:12px;
+  background:#ffffff0b;border:1px solid var(--line);
+}
+.stat strong {display:block}
+.stat small {color:var(--muted)}
+.section-head {margin-bottom:25px}
+.section-head h2 {font-size:clamp(30px,5vw,45px);line-height:1.1;margin:8px 0}
+.services,.video-grid,.why-grid {
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;
+}
+.service,.video-card,.why {
+  background:var(--panel);border:1px solid var(--line);
+  border-radius:18px;overflow:hidden;
+}
+.service {padding:22px;display:flex;flex-direction:column}
+.service-icon {font-size:28px;color:var(--blue)}
+.service h3 {margin:10px 0 0}
+.price {font-size:25px;font-weight:900;margin-top:auto;padding-top:12px}
+.price small {font-size:13px;color:var(--muted);font-weight:400}
+.work-section {background:#0c121c}
+.video-card.featured {
+  grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;
+}
+.video-preview {
+  min-height:280px;padding:25px;text-align:center;
+  display:flex;flex-direction:column;align-items:center;
+  justify-content:center;gap:14px;
+  background:radial-gradient(ellipse,#17385a,#080b12);
+}
+.play {
+  display:grid;place-items:center;width:70px;height:70px;
+  background:var(--blue);color:#06101b;border-radius:50%;
+  font-size:27px;font-weight:bold;
+}
+.video-preview strong {font-size:21px}
+.video-preview small {color:var(--muted)}
+.video-info {padding:22px}
+.video-info h3 {font-size:23px;line-height:1.2;margin:8px 0}
+.tag {color:var(--blue);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:1px}
+.text-link {color:var(--blue);font-weight:800}
+.giveaway {
+  display:grid;grid-template-columns:1fr 1fr;gap:25px;
+  align-items:center;padding:30px;border-radius:22px;
+  border:1px solid #31506e;
+  background:linear-gradient(135deg,#14243a,#0c1119);
+}
+.giveaway h2 {font-size:clamp(34px,5vw,52px);line-height:1.05}
+.giveaway-preview {
+  min-height:360px;aspect-ratio:9/16;max-height:460px;
+  display:flex;flex-direction:column;align-items:center;
+  justify-content:center;gap:15px;text-align:center;padding:20px;
+  background:radial-gradient(ellipse,#17385a,#080b12);
+  border:1px solid #31506e;border-radius:18px;
+}
+.steps {display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}
+.step {
+  border:1px solid var(--line);border-radius:20px;
+  padding:7px 11px;font-size:13px;
+}
+.why {padding:22px}
+.why strong {font-size:18px}
+.booking {
+  display:grid;grid-template-columns:.8fr 1.2fr;
+  gap:28px;align-items:start;
+}
+.contact-line {display:block;margin:18px 0}
+.contact-line strong {display:block}
+.contact-line small {color:var(--muted)}
+.form-card {
+  padding:25px;background:var(--panel);
+  border:1px solid var(--line);border-radius:20px;
+}
+.form-grid {display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field {display:flex;flex-direction:column;gap:6px}
+.field.full {grid-column:1/-1}
+label {font-size:14px;font-weight:bold}
+input,select,textarea {
+  width:100%;padding:12px;border-radius:10px;
+  border:1px solid var(--line);background:#080d15;color:white;
+}
+textarea {min-height:100px}
+button {border:0;cursor:pointer;font:inherit}
+.form-card button {width:100%;margin-top:18px}
+.fineprint {font-size:12px}
+footer {padding:30px 0;border-top:1px solid var(--line)}
+.footer-inner {display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.socials {display:flex;gap:15px;flex-wrap:wrap}
+.mobile-book {display:none}
+
+@media(max-width:750px) {
+  .hero-grid,.giveaway,.booking {grid-template-columns:1fr}
+  .services,.video-grid,.why-grid {grid-template-columns:1fr}
+  .video-card.featured {grid-column:auto;grid-template-columns:1fr}
+  .hero {padding:50px 0}
+  section {padding:45px 0}
+  .navlinks {gap:10px}
+  .stats {gap:6px}
+  .stat {padding:9px;font-size:13px}
+  .giveaway {padding:20px}
+  .mobile-book {
+    display:block;position:fixed;bottom:12px;left:12px;right:12px;
+    text-align:center;z-index:20;box-shadow:0 5px 25px #0009;
+  }
+  footer {padding-bottom:85px}
+}
+@media(max-width:420px) {
+  .form-grid {grid-template-columns:1fr}
+  .field.full {grid-column:auto}
+}
+</style>
 </head>
+
 <body>
-  <header class="topbar">
-    <div class="wrap nav">
-      <a class="brand" href="#home" aria-label="FreshRides home"><span class="brand-mark">FR</span><span>Fresh<span>Rides</span></span></a>
-      <nav class="navlinks" aria-label="Main navigation">
-        <a href="#services">Services</a><a href="#work">Our Work</a><a href="#giveaway">Giveaway</a><a href="#contact">Contact</a>
-        <a class="nav-cta" href="https://wa.me/447386175804?text=Hi%20FreshRides%2C%20I%27d%20like%20to%20ask%20about%20booking%20a%20detail." target="_blank" rel="noopener">Book a detail â</a>
-      </nav>
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="logo" href="#home">FreshRides</a>
+      <div class="navlinks">
+        <a href="#services">Services</a>
+        <a href="#work">Our Work</a>
+        <a href="#giveaway">Giveaway</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="https://wa.me/447386175804">Book Now ↗</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Car detailing · Leeds, UK</div>
+      <h1>Bring back that <span>fresh-car</span> feeling.</h1>
+      <p>From everyday mess to a proper fresh finish, FreshRides helps your car look its best. Check out our real jobs and message us to book.</p>
+      <a class="btn" href="#contact">Get a booking quote ↗</a>
+      &nbsp; <a class="text-link" href="#work">Watch our work ↓</a>
     </div>
-  </header>
-
-  <main>
-    <section class="hero" id="home">
-      <div class="wrap hero-grid">
-        <div>
-          <div class="eyebrow">Car detailing Â· Leeds, UK</div>
-          <h1>Bring back that <span>fresh-car</span> feeling.</h1>
-          <p>From everyday mess to a proper fresh finish, FreshRides helps your car look and feel its best. Check out our real jobs, choose your service and message us to book.</p>
-          <div class="actions"><a class="btn" href="#contact">Get a booking quote â</a><a class="btn secondary" href="#work">Watch our work â</a></div>
-        </div>
-        <div class="hero-card">
-          <div class="hero-card-top"><small>FreshRides detailing</small><h2>Clean details.<br>Fresh results.</h2></div>
-          <div class="shine" aria-hidden="true">
-            <svg viewBox="0 0 480 190" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M64 121L91 84C99 73 112 66 126 63L191 47C207 43 224 44 239 51L287 73L353 81C369 83 383 93 389 108L403 131C407 138 402 146 394 146H78C63 146 56 134 64 121Z" fill="#1b2738" stroke="#6bc2ff" stroke-width="3"/><path d="M111 83L197 59C211 55 223 57 235 63L270 80L111 83Z" fill="#65bdf6" fill-opacity=".4" stroke="#78cbff" stroke-width="2"/><path d="M281 83L346 91C359 93 369 101 375 113L281 113V83Z" fill="#65bdf6" fill-opacity=".32" stroke="#78cbff" stroke-width="2"/><path d="M83 124H391" stroke="#7ccaff" stroke-width="2"/><circle cx="131" cy="143" r="25" fill="#080b12" stroke="#8acfff" stroke-width="4"/><circle cx="131" cy="143" r="11" fill="#293b50" stroke="#8acfff" stroke-width="3"/><circle cx="345" cy="143" r="25" fill="#080b12" stroke="#8acfff" stroke-width="4"/><circle cx="345" cy="143" r="11" fill="#293b50" stroke="#8acfff" stroke-width="3"/><path d="M35 35L45 48L58 52L45 57L40 70L35 57L22 52L35 48V35Z" fill="#8ad2ff"/><path d="M420 42L427 52L438 56L427 60L420 71L416 60L405 56L416 52L420 42Z" fill="#8ad2ff"/></svg>
-          </div>
-          <div class="hero-card-bottom"><div class="stats"><div class="stat"><strong>Fresh finish</strong><span>Inside & out</span></div><div class="stat"><strong>Real results</strong><span>See our videos</span></div><div class="stat"><strong>Easy booking</strong><span>Message us</span></div></div></div>
-        </div>
+    <div class="hero-card">
+      <div class="eyebrow">FreshRides detailing</div>
+      <h2>Clean details.<br><span>Fresh results.</span></h2>
+      <p>Real jobs. Professional care. Easy bookings.</p>
+      <div class="stats">
+        <div class="stat"><strong>Fresh finish</strong><small>Inside & out</small></div>
+        <div class="stat"><strong>Real results</strong><small>Our videos</small></div>
+        <div class="stat"><strong>Easy booking</strong><small>WhatsApp</small></div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section id="services">
-      <div class="wrap">
-        <div class="section-head"><div><div class="kicker">Choose your service</div><h2>Find the right detail.</h2></div><p>Not sure what your car needs? Send us a message and we can help you choose the right option.</p></div>
-        <div class="services">
-          <article class="service"><div class="service-icon">â¦</div><h3>Exterior Wash & Shine</h3><p>A thorough exterior clean to leave your car looking fresh and glossy.</p><div class="price">Â£28.99 <small>/ from</small></div></article>
-          <article class="service"><div class="service-icon">â</div><h3>Mini Valet</h3><p>A tidy-up for the interior and exterior, ideal for regular maintenance.</p><div class="price">Â£36.99 <small>/ from</small></div></article>
-          <article class="service"><div class="service-icon">â§</div><h3>Deep Clean</h3><p>A more thorough clean for interiors that need extra attention.</p><div class="price">Â£49.99 <small>/ from</small></div></article>
-          <article class="service"><div class="service-icon">â¼</div><h3>Wax & Protection</h3><p>Extra care for your paintwork and a clean, glossy finish.</p><div class="price">Â£29.99 <small>/ from</small></div></article>
-          <article class="service"><div class="service-icon">â</div><h3>Premium Detail & Protection</h3><p>A premium clean with extra finishing touches for a standout result.</p><div class="price">Â£79.99 <small>/ from</small></div></article>
-          <article class="service"><div class="service-icon">ï¼</div><h3>Need a custom detail?</h3><p>Tell us the car, its condition and what you want done. We'll discuss the best option.</p><a class="text-link" href="#contact">Ask for a quote â</a></article>
-        </div>
-      </div>
-    </section>
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Choose your service</div>
+      <h2>Find the right detail.</h2>
+      <p>Not sure what your car needs? Message us and we'll help you choose.</p>
+    </div>
+    <div class="services">
+      <article class="service">
+        <div class="service-icon">✦</div>
+        <h3>Exterior Wash & Shine</h3>
+        <p>A thorough exterior clean for a fresh, glossy finish.</p>
+        <div class="price">£28.99 <small>/ from</small></div>
+      </article>
+      <article class="service">
+        <div class="service-icon">◈</div>
+        <h3>Mini Valet</h3>
+        <p>An interior and exterior tidy-up for regular maintenance.</p>
+        <div class="price">£36.99 <small>/ from</small></div>
+      </article>
+      <article class="service">
+        <div class="service-icon">✧</div>
+        <h3>Deep Clean</h3>
+        <p>A thorough clean for interiors that need extra attention.</p>
+        <div class="price">£49.99 <small>/ from</small></div>
+      </article>
+      <article class="service">
+        <div class="service-icon">☼</div>
+        <h3>Wax & Protection</h3>
+        <p>Extra care for your paintwork and a glossy finish.</p>
+        <div class="price">£29.99 <small>/ from</small></div>
+      </article>
+      <article class="service">
+        <div class="service-icon">◆</div>
+        <h3>Premium Detail & Protection</h3>
+        <p>A premium clean with extra finishing touches.</p>
+        <div class="price">£79.99 <small>/ from</small></div>
+      </article>
+      <article class="service">
+        <div class="service-icon">＋</div>
+        <h3>Need a custom detail?</h3>
+        <p>Tell us about your car and we'll discuss the best option.</p>
+        <a class="text-link" href="#contact">Ask for a quote ↗</a>
+      </article>
+    </div>
+  </div>
+</section>
 
-    <section class="work-section" id="work">
-      <div class="wrap">
-        <div class="section-head"><div><div class="kicker">Real FreshRides jobs</div><h2>Watch the transformations.</h2></div><p>These are videos from our own detailing work. Tap play to watch them here.</p></div>
-        <div class="video-grid">
-          <article class="video-card featured">
-            <div class="video-frame"><video controls playsinline preload="metadata" poster="" aria-label="FreshRides customer reaction video"><source src="customer-reaction.mp4" type="video/mp4">Your browser does not support embedded video. <a href="customer-reaction.mp4">Open the video</a>.</video></div>
-            <div class="video-info"><span class="tag">Customer reaction</span><h3>The result says it all.</h3><p>See a customer's reaction after their FreshRides detail. Watch the full clip and see the difference for yourself.</p><a class="text-link" href="https://vm.tiktok.com/ZN8D34NUp/" target="_blank" rel="noopener">Watch on TikTok â</a></div>
-          </article>
-          <article class="video-card"><div class="video-frame"><video controls playsinline preload="metadata" aria-label="FreshRides detailing process video one"><source src="process-1.mp4" type="video/mp4">Your browser does not support embedded video.</video></div><div class="video-info"><span class="tag">Behind the detail</span><h3>Every little detail matters.</h3><p>A look at the work that goes into a FreshRides clean.</p><a class="text-link" href="https://vm.tiktok.com/ZN8DT1y7r/" target="_blank" rel="noopener">Watch on TikTok â</a></div></article>
-          <article class="video-card"><div class="video-frame"><video controls playsinline preload="metadata" aria-label="FreshRides detailing process video two"><source src="process-2.mp4" type="video/mp4">Your browser does not support embedded video.</video></div><div class="video-info"><span class="tag">The process</span><h3>From dirty to fresh.</h3><p>More real work from the FreshRides detailing process.</p><a class="text-link" href="https://vm.tiktok.com/ZN8D3w63m/" target="_blank" rel="noopener">Watch on TikTok â</a></div></article>
-          <article class="video-card"><div class="video-frame"><video controls playsinline preload="metadata" aria-label="FreshRides detailing process video three"><source src="process-3.mp4" type="video/mp4">Your browser does not support embedded video.</video></div><div class="video-info"><span class="tag">More FreshRides work</span><h3>Cleaned with care.</h3><p>Another look at the results and effort behind each job.</p><a class="text-link" href="https://vm.tiktok.com/ZN8D37WPK/" target="_blank" rel="noopener">Watch on TikTok â</a></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="giveaway">
-      <div class="wrap">
-        <div class="giveaway">
-          <div><div class="eyebrow">FreshRides giveaway</div><h2>Help us reach <span>1,000 followers.</span></h2><p>We're planning a free full detail giveaway when our TikTok reaches 1,000 followers. Follow the account and check the original video for the entry details and any updates.</p><div class="steps"><span class="step">Follow FreshRides</span><span class="step">Comment on the giveaway video</span><span class="step">Check the original post for rules</span></div><a class="btn" href="https://vm.tiktok.com/ZN8D3bqUY/" target="_blank" rel="noopener">View giveaway video â</a></div>
-          <div><video controls playsinline preload="metadata" aria-label="FreshRides 1000 followers giveaway video"><source src="giveaway.mp4" type="video/mp4">Your browser does not support embedded video.</video></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="why-us">
-      <div class="wrap"><div class="section-head"><div><div class="kicker">Why FreshRides</div><h2>Good work, no fuss.</h2></div><p>We want every customer to know what they're booking and feel good about the result.</p></div>
-        <div class="why-grid"><article class="why"><strong>Care in the details</strong><p>We take our time with the job and focus on the areas that make a difference.</p></article><article class="why"><strong>Clear communication</strong><p>Message us about your car and the service you need before booking.</p></article><article class="why"><strong>Real work on show</strong><p>Watch our videos to see our process and customer reactions for yourself.</p></article></div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="wrap booking">
-        <div class="booking-copy"><div class="kicker">Ready to book?</div><h2>Let's get your car looking fresh.</h2><p>Send your details through the form and it will open a WhatsApp message to FreshRides. We'll confirm availability and discuss the job with you.</p>
-          <div class="contact-lines"><a class="contact-line" href="https://wa.me/447386175804" target="_blank" rel="noopener"><span class="bubble">â</span><span><strong>WhatsApp bookings</strong><small>07386 175804</small></span></a><a class="contact-line" href="https://www.instagram.com/freshrides_details/" target="_blank" rel="noopener"><span class="bubble">â</span><span><strong>Instagram</strong><small>@freshrides_details</small></span></a><a class="contact-line" href="https://www.tiktok.com/@freshride_details" target="_blank" rel="noopener"><span class="bubble">âª</span><span><strong>TikTok</strong><small>@freshride_details</small></span></a></div>
-        </div>
-        <form class="form-card" id="bookingForm"><h3>Ask about a booking</h3><p>Fill in what you can â you can add more details in WhatsApp.</p>
-          <div class="form-grid"><div class="field"><label for="customerName">Your name *</label><input id="customerName" name="customerName" autocomplete="name" required placeholder="Your name"></div><div class="field"><label for="customerPhone">Your phone (optional)</label><input id="customerPhone" name="customerPhone" autocomplete="tel" placeholder="Phone number"></div><div class="field"><label for="car">Car make / model *</label><input id="car" name="car" required placeholder="e.g. VW Golf"></div><div class="field"><label for="service">Service *</label><select id="service" name="service" required><option value="" disabled selected>Choose a service</option><option>Exterior Wash & Shine â Â£28.99</option><option>Mini Valet â Â£36.99</option><option>Deep Clean â Â£49.99</option><option>Wax & Protection â Â£29.99</option><option>Premium Detail & Protection â Â£79.99</option><option>Not sure â please advise</option></select></div><div class="field full"><label for="details">Anything else? (optional)</label><textarea id="details" name="details" placeholder="Tell us about the car, its condition or when you'd like to book."></textarea></div></div>
-          <button class="btn" type="submit">Continue to WhatsApp â</button><p class="fineprint">This form opens WhatsApp with your message ready to send. It does not send anything automatically.</p>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer"><div class="wrap footer-inner"><div><strong style="color:#f4f7fb">FreshRides</strong> Â· Leeds, United Kingdom</div><div class="socials"><a href="https://www.instagram.com/freshrides_details/" target="_blank" rel="noopener">Instagram â</a><a href="https://www.tiktok.com/@freshride_details" target="_blank" rel="noopener">TikTok â</a><a href="https://wa.me/447386175804" target="_blank" rel="noopener">WhatsApp â</a></div><div>Â© <span id="year"></span> FreshRides</div></div></footer>
-  <a class="btn mobile-book" href="https://wa.me/447386175804?text=Hi%20FreshRides%2C%20I%27d%20like%20to%20ask%20about%20booking%20a%20detail." target="_blank" rel="noopener">Book on WhatsApp â</a>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    document.getElementById('bookingForm').addEventListener('submit', function(event) {
-      event.preventDefault();
-      const name = document.getElementById('customerName').value.trim();
-      const phone = document.getElementById('customerPhone').value.trim();
-      const car = document.getElementById('car').value.trim();
-      const service = document.getElementById('service').value;
-      const details = document.getElementById('details').value.trim();
-      const message = `Hi FreshRides, I'd like to ask about a booking.\n\nName: ${name}\nPhone: ${phone || 'Not provided'}\nCar: ${car}\nService: ${service}\nExtra details: ${details || 'None added yet'}\n\nPlease let me know your availability. Thank you!`;
-      window.open('https://wa.me/447386175804?text=' + encodeURIComponent(message), '_blank', 'noopener');
-    });
-  </script>
-</body>
-</html>
-
-
-          <div>
-
-            <label for="location">
-              Location
-            </label>
-
-            <input
-              id="location"
-              type="text"
-              required
-              placeholder="Your Leeds area"
-            >
-
-          </div>
-
-
-          <div>
-
-            <label for="date">
-              Preferred Date
-            </label>
-
-            <input
-              id="date"
-              type="date"
-              required
-            >
-
-          </div>
-
-
-          <div>
-
-            <label for="time">
-              Preferred Time
-            </label>
-
-            <input
-              id="time"
-              type="time"
-            >
-
-          </div>
-
-
-        </div>
-
-
-        <button
-          class="btn primary booking-btn"
-          type="submit"
-        >
-          SEND BOOKING ON WHATSAPP
-        </button>
-
-
-      </form>
-
+<section class="work-section" id="work">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Real FreshRides jobs</div>
+      <h2>Watch the transformations.</h2>
+      <p>Tap a card to watch the original video on TikTok.</p>
     </div>
 
-  </section>
-
-
-  <!-- CONTACT -->
-
-  <section id="contact">
-
-    <div class="container">
-
-      <div class="section-title">
-
-        <h2>
-          Ready for a FreshRide?
-        </h2>
-
-        <p>
-          Get in touch to check availability and book.
-        </p>
-
-      </div>
-
-
-      <div class="contact">
-
-
-        <a
-          class="card"
-          href="https://www.instagram.com/freshrides_details/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-
-          <strong>
-            📸 Instagram
-          </strong>
-
-          <span>
-            @freshrides_details — DM us to book
-          </span>
-
+    <div class="video-grid">
+      <article class="video-card featured">
+        <a class="video-preview" href="https://vm.tiktok.com/ZN8D34NUp/" target="_blank" rel="noopener">
+          <span class="play">▶</span>
+          <strong>Customer reaction</strong>
+          <small>Tap to watch on TikTok ↗</small>
         </a>
+        <div class="video-info">
+          <span class="tag">Customer reaction</span>
+          <h3>The result says it all.</h3>
+          <p>See the customer's reaction after their FreshRides detail.</p>
+          <a class="text-link" href="https://vm.tiktok.com/ZN8D34NUp/" target="_blank" rel="noopener">Watch on TikTok ↗</a>
+        </div>
+      </article>
 
-
-        <a
-          class="card"
-          href="https://wa.me/447386175804"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-
-          <strong>
-            💬 WhatsApp
-          </strong>
-
-          <span>
-            07386 175804 — Message us to book
-          </span>
-
+      <article class="video-card">
+        <a class="video-preview" href="https://vm.tiktok.com/ZN8DT1y7r/" target="_blank" rel="noopener">
+          <span class="play">▶</span>
+          <strong>Behind the detail</strong>
+          <small>Tap to watch on TikTok ↗</small>
         </a>
-
-
-        <div class="card">
-
-          <strong>
-            📍 Service Area
-          </strong>
-
-          <span>
-            Leeds, United Kingdom
-          </span>
-
+        <div class="video-info">
+          <span class="tag">Behind the detail</span>
+          <h3>Every little detail matters.</h3>
+          <p>A look at the work that goes into a FreshRides clean.</p>
+          <a class="text-link" href="https://vm.tiktok.com/ZN8DT1y7r/" target="_blank" rel="noopener">Watch on TikTok ↗</a>
         </div>
+      </article>
 
-
-        <div class="card">
-
-          <strong>
-            🕒 Availability
-          </strong>
-
-          <span>
-            Message us for current availability
-          </span>
-
+      <article class="video-card">
+        <a class="video-preview" href="https://vm.tiktok.com/ZN8D3w63m/" target="_blank" rel="noopener">
+          <span class="play">▶</span>
+          <strong>From dirty to fresh</strong>
+          <small>Tap to watch on TikTok ↗</small>
+        </a>
+        <div class="video-info">
+          <span class="tag">The process</span>
+          <h3>From dirty to fresh.</h3>
+          <p>More real work from the FreshRides detailing process.</p>
+          <a class="text-link" href="https://vm.tiktok.com/ZN8D3w63m/" target="_blank" rel="noopener">Watch on TikTok ↗</a>
         </div>
+      </article>
 
+      <article class="video-card">
+        <a class="video-preview" href="https://vm.tiktok.com/ZN8D37WPK/" target="_blank" rel="noopener">
+          <span class="play">▶</span>
+          <strong>More FreshRides work</strong>
+          <small>Tap to watch on TikTok ↗</small>
+        </a>
+        <div class="video-info">
+          <span class="tag">More FreshRides work</span>
+          <h3>Cleaned with care.</h3>
+          <p>Another look at the effort behind each job.</p>
+          <a class="text-link" href="https://vm.tiktok.com/ZN8D37WPK/" target="_blank" rel="noopener">Watch on TikTok ↗</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
+<section id="giveaway">
+  <div class="wrap">
+    <div class="giveaway">
+      <div>
+        <div class="eyebrow">FreshRides giveaway</div>
+        <h2>Help us reach <span>1,000 followers.</span></h2>
+        <p>We're planning a free full detail giveaway when our TikTok reaches 1,000 followers. Follow FreshRides and check the original video for entry details and updates.</p>
+        <div class="steps">
+          <span class="step">Follow FreshRides</span>
+          <span class="step">Comment on the giveaway video</span>
+          <span class="step">Check the original post for rules</span>
+        </div>
+        <a class="btn" href="https://vm.tiktok.com/ZN8D3bqUY/" target="_blank" rel="noopener">View giveaway video ↗</a>
       </div>
+      <a class="giveaway-preview" href="https://vm.tiktok.com/ZN8D3bqUY/" target="_blank" rel="noopener">
+        <span class="play">▶</span>
+        <strong>Free full detail giveaway</strong>
+        <small>Tap to watch the original video ↗</small>
+      </a>
+    </div>
+  </div>
+</section>
 
+<section id="why-us">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Why FreshRides</div>
+      <h2>Good work, no fuss.</h2>
+    </div>
+    <div class="why-grid">
+      <article class="why">
+        <strong>Care in the details</strong>
+        <p>We focus on the areas that make a difference.</p>
+      </article>
+      <article class="why">
+        <strong>Clear communication</strong>
+        <p>Message us about your car and the service you need.</p>
+      </article>
+      <article class="why">
+        <strong>Real work on show</strong>
+        <p>Watch our videos to see our work and customer reactions.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap booking">
+    <div>
+      <div class="eyebrow">Ready to book?</div>
+      <h2>Let's get your car looking fresh.</h2>
+      <p>Fill in the form and it will open a WhatsApp message. We'll confirm availability and discuss the job with you.</p>
+
+      <div class="contact-line">
+        <strong>WhatsApp bookings</strong>
+        <a class="text-link" href="https://wa.me/447386175804">07386 175804 ↗</a>
+      </div>
+      <div class="contact-line">
+        <strong>Instagram</strong>
+        <a class="text-link" href="https://www.instagram.com/freshrides_details/" target="_blank" rel="noopener">@freshrides_details ↗</a>
+      </div>
+      <div class="contact-line">
+        <strong>TikTok</strong>
+        <a class="text-link" href="https://www.tiktok.com/@freshride_details" target="_blank" rel="noopener">@freshride_details ↗</a>
+      </div>
     </div>
 
-  </section>
-
+    <form class="form-card" id="bookingForm">
+      <h3>Ask about a booking</h3>
+      <p>Fill in what you can. You can add more details in WhatsApp.</p>
+      <div class="form-grid">
+        <div class="field">
+          <label for="customerName">Your name *</label>
+          <input id="customerName" required placeholder="Your name">
+        </div>
+        <div class="field">
+          <label for="customerPhone">Phone (optional)</label>
+          <input id="customerPhone" placeholder="Phone number">
+        </div>
+        <div class="field">
+          <label for="car">Car make / model *</label>
+          <input id="car" required placeholder="e.g. VW Golf">
+        </div>
+        <div class="field">
+          <label for="service">Service *</label>
+          <select id="service" required>
+            <option value="" disabled selected>Choose a service</option>
+            <option>Exterior Wash & Shine — £28.99</option>
+            <option>Mini Valet — £36.99</option>
+            <option>Deep Clean — £49.99</option>
+            <option>Wax & Protection — £29.99</option>
+            <option>Premium Detail & Protection — £79.99</option>
+            <option>Not sure — please advise</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label for="details">Anything else? (optional)</label>
+          <textarea id="details" placeholder="Car condition or when you'd like to book"></textarea>
+        </div>
+      </div>
+      <button class="btn" type="submit">Continue to WhatsApp ↗</button>
+      <p class="fineprint">This opens WhatsApp with your message ready to send. It does not send automatically.</p>
+    </form>
+  </div>
+</section>
 </main>
 
-
-<!-- FOOTER -->
-
 <footer>
-
-  <div class="container">
-
-    <b>
-      FRESHRIDES AUTO DETAILING
-    </b>
-
-    <br>
-
-    Cleaner. Shinier. Fresher.
-    © <span id="year"></span>
-
+  <div class="wrap footer-inner">
+    <strong>FreshRides · Leeds, United Kingdom</strong>
+    <div class="socials">
+      <a href="https://www.instagram.com/freshrides_details/" target="_blank" rel="noopener">Instagram ↗</a>
+      <a href="https://www.tiktok.com/@freshride_details" target="_blank" rel="noopener">TikTok ↗</a>
+      <a href="https://wa.me/447386175804" target="_blank" rel="noopener">WhatsApp ↗</a>
+    </div>
+    <span>© <span id="year"></span> FreshRides</span>
   </div>
-
 </footer>
 
+<a class="btn mobile-book" href="https://wa.me/447386175804">Book on WhatsApp ↗</a>
 
 <script>
+document.getElementById("year").textContent = new Date().getFullYear();
 
-  /* YEAR */
+document.getElementById("bookingForm").addEventListener("submit", function(event) {
+  event.preventDefault();
 
-  document.getElementById("year").textContent =
-    new Date().getFullYear();
+  const name = document.getElementById("customerName").value.trim();
+  const phone = document.getElementById("customerPhone").value.trim();
+  const car = document.getElementById("car").value.trim();
+  const service = document.getElementById("service").value;
+  const details = document.getElementById("details").value.trim();
 
+  const message =
+    "Hi FreshRides, I'd like to ask about a booking.\n\n" +
+    "Name: " + name + "\n" +
+    "Phone: " + (phone || "Not provided") + "\n" +
+    "Car: " + car + "\n" +
+    "Service: " + service + "\n" +
+    "Extra details: " + (details || "None added yet") +
+    "\n\nPlease let me know your availability. Thank you!";
 
-  /* MOBILE MENU */
-
-  function toggleMenu(){
-
-    const menu =
-      document.getElementById("navLinks");
-
-    if(menu.style.display === "flex"){
-
-      menu.style.display = "none";
-
-    }else{
-
-      menu.style.display = "flex";
-
-    }
-
-  }
-
-
-  /* WHATSAPP BOOKING */
-
-  function sendBooking(event){
-
-    event.preventDefault();
-
-
-    const name =
-      document.getElementById("name").value.trim();
-
-    const service =
-      document.getElementById("package").value;
-
-    const vehicle =
-      document.getElementById("vehicle").value.trim();
-
-    const location =
-      document.getElementById("location").value.trim();
-
-    const date =
-      document.getElementById("date").value;
-
-    const time =
-      document.getElementById("time").value ||
-      "Any time";
-
-
-    const message =
-      "Hi FreshRides! I'd like to book a detailing service.%0A%0A" +
-
-      "Name: " +
-      encodeURIComponent(name) +
-      "%0A" +
-
-      "Service: " +
-      encodeURIComponent(service) +
-      "%0A" +
-
-      "Vehicle: " +
-      encodeURIComponent(vehicle) +
-      "%0A" +
-
-      "Location: " +
-      encodeURIComponent(location) +
-      "%0A" +
-
-      "Preferred date: " +
-      encodeURIComponent(date) +
-      "%0A" +
-
-      "Preferred time: " +
-      encodeURIComponent(time);
-
-
-    window.open(
-      "https://wa.me/447386175804?text=" + message,
-      "_blank"
-    );
-
-  }
-
+  window.location.href =
+    "https://wa.me/447386175804?text=" + encodeURIComponent(message);
+});
 </script>
-
-
 </body>
 </html>
